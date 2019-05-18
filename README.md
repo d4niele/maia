@@ -3,7 +3,7 @@ Prototipo per la costruzione di un sistema di controllo di peso e temperatura pe
 Ingredienti:
 1. Microcontrollore ESP32
 2. Celle di carico
-3. Amplificatore segnale delle di carico HX711
+3. Amplificatore segnale celle di carico HX711
 4. Sensore di temperatura 1
 5. Sensore di temperatura e umidità
 
