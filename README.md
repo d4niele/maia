@@ -1,5 +1,5 @@
 # maia
-Prototipo per la costruzione di un sistema di controllo di peso e temperatura per le arnie
+Prototipo per la costruzione di un sistema di controllo di peso e temperatura per le arnie  
 Ingredienti:
 1. Microcontrollore ESP32
 2. Celle di carico
