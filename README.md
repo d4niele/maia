@@ -9,7 +9,7 @@ Prototipo per la costruzione di un sistema di controllo di peso e temperatura pe
 
 #### Preparazione della scheda ESP32:
 La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare il sottosistema Micropythonsu di essa. Viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
-Altro tool utile da installare sul proprio pc è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy)  
+Altro tool utile da installare sul proprio pc è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy).
 
 #### Collegamento tra le 4 celle di carico:
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili. 
