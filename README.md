@@ -2,7 +2,7 @@
 Prototipo per la costruzione di un sistema di controllo di peso e temperatura per le arnie  
 #### Ingredienti:
 - [Microcontrollore ESP32](imgs/esp32.jpg) [pinout](imgs/esp32_pinout.jpg)
-- [Cella di carico a tre fili - 50kg ](imgs/celle_di_carico.jpg) (4 pezzi)
+- [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
 - [Amplificatore segnale celle di carico HX711](imgs/hx711.jpg)
 - Sensore di temperatura (esterno)
 - Sensore di temperatura e umidità (interno)
@@ -12,7 +12,7 @@ La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare
 Altro tool utile da installare sul proprio pc è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy)  
 
 #### Collegamento tra le celle di carico:
-Le 4 celle di carico vanno collegate tra loro al fine di creare un ponte di Wheatstone. Sono celle di carico a tre fili. 
+Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili. 
 Questo lo schema di collegamento:
 ![](imgs/ponte_wheatstone.jpg)
 
