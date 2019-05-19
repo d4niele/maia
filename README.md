@@ -1,7 +1,7 @@
 # maia
 Prototipo per la costruzione di un sistema di controllo di peso e temperatura per le arnie  
 #### Ingredienti:
-- [Microcontrollore ESP32](imgs/esp32.jpg) [pinout](imgs/esp32_pinout.jpg)
+- [Microcontrollore ESP32](imgs/esp32.jpg) - [pinout](imgs/esp32_pinout.jpg)
 - [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
 - [Amplificatore segnale celle di carico HX711](imgs/hx711.jpg)
 - [Sensore di temperatura digitale DS18B20 (per uso esterno)](imgs/ds18b20.jpg)
