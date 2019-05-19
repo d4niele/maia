@@ -1,5 +1,5 @@
 # maia
-Progetto per la costruzione di un prototipo di un sistema elettronico digitale di controllo con la misurazione di peso e temperatura utilizzato per il monitoraggio e telecontrollo di arnie  
+Progetto per la costruzione di un prototipo di un sistema elettronico digitale di controllo con misurazione di peso e temperatura. Utilizzato per il monitoraggio e telecontrollo di arnie  
 #### Ingredienti:
 - [Microcontrollore ESP32](imgs/esp32.jpg) - [pinout](imgs/esp32_pinout.jpg)
 - [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
