@@ -39,7 +39,7 @@ import upip
 upip.install("micropython-hx711")
 ```
 
-#### Singola lettura di test di peso (senza calibratura):
+#### Singola lettura di test di peso (senza calibrazione):
 
 ```python
 from machine import freq
