@@ -11,7 +11,7 @@ Prototipo per la costruzione di un sistema di controllo di peso e temperatura pe
 La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare sulla stessa  il sottosistema Micropython. Viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
 Altro tool utile da installare sul proprio pc è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy)  
 
-#### Collegamento tra le celle di carico:
+#### Collegamento tra le 4 celle di carico:
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili. 
 Questo lo schema di collegamento:
 ![](imgs/ponte_wheatstone.jpg)
@@ -20,7 +20,7 @@ Questo lo schema di collegamento:
 ![](imgs/collegamento_esp32_hx711.jpg)
 
 #### Primi test sulla scheda ESP32:
-Dopo aver collegato la scheda ESP32 al proprio Pc con un cavo usb-microusb, si accede all'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "minterm /dev/ttyUSB0 115200 --raw" .
+Dopo aver collegato la scheda ESP32 al proprio Pc con un cavo usb-microusb, si accede all'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "miniterm /dev/ttyUSB0 115200 --raw" oppure "miniterm /dev/ttyUSB0 115200 --raw". Il parametro '/dev/ttyUSB0' indica la porta seriale (serial over usb) assegnata dal PC alla scheda. 
 Eseguendo il codice seguente, colleghiamo la scheda alla nostra rete wifi:
 ```python
 import network
@@ -32,7 +32,7 @@ n.connect("ssid","password")
 n.ifconfig()
 ```
 #### Installazione della libreria micropython-hx711:
-Dopo aver collegato la scheda ESP32 a Internet attraverso la connessione wifi, c'è bisogno di installare nell'ambiente micropython la libreria per interfacciarsi all'amplificatore hx711.
+Dopo aver collegato la scheda ESP32 a internet attraverso una connessione wifi, c'è bisogno di installareal suo interno la libreria per interfacciarsi all'amplificatore hx711.
 L'installazione è semplice e consiste in 2 righe di codice:
 ```python
 import upip
