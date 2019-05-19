@@ -8,7 +8,7 @@ Prototipo per la costruzione di un sistema di controllo di peso e temperatura pe
 - Sensore di temperatura e umidità (interno)
 
 #### Preparazione della scheda ESP32:
-La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare sulla stessa  il sottosistema Micropython. Viene utlizzerato il tool ethtool - [questa la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
+La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare sulla stessa  il sottosistema Micropython. Viene utilizzato il tool ethtool - [questa la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
 
 ## Links
 [Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)
