@@ -8,7 +8,7 @@ Prototipo per la costruzione di un sistema elettronico digitale di controllo di 
 - [Sensore di temperatura e umidità DHT22 (per uso interno)](imgs/dht22.jpg)
 
 #### Preparazione della scheda ESP32:
-La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare il sottosistema Micropython su di essa. Viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
+La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare il sottosistema Micropython su di essa: viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
 Altro tool utile da installare sul proprio pc è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy).
 
 #### Collegamento tra le 4 celle di carico:
