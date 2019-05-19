@@ -4,7 +4,7 @@ Prototipo per la costruzione di un sistema di controllo di peso e temperatura pe
 - [Microcontrollore ESP32](imgs/esp32.jpg) [pinout](imgs/esp32_pinout.jpg)
 - [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
 - [Amplificatore segnale celle di carico HX711](imgs/hx711.jpg)
-- Sensore di temperatura (esterno)
+- Sensore di temperatura digitale DS18B20 (per uso esterno) (imgs/ds18bl20.jpg)
 - Sensore di temperatura e umidità (interno)
 
 #### Preparazione della scheda ESP32:
