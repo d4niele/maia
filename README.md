@@ -19,7 +19,7 @@ Questo lo schema di collegamento:
 ![](imgs/ponte_wheatstone.jpg)
 
 #### Collegamento tra amplificatore celle di carico e scheda elettronica:
-![](imgs/collegamento_esp32_hx711.jpg)
+![](imgs/esp32_xh711_bb.jpg)
 
 #### Primi test sulla scheda ESP32:
 Dopo aver collegato la scheda ESP32 al proprio Pc con un cavo usb-microusb, si accede all'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "miniterm /dev/ttyUSB0 115200 --raw" oppure "miniterm.py /dev/ttyUSB0 115200 --raw". Il parametro '/dev/ttyUSB0' indica la porta seriale (serial over usb) assegnata dal PC alla scheda. 
