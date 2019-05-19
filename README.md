@@ -12,7 +12,7 @@ La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare
 Altro tool utile da installare sul proprio pc è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy)  
 
 #### Collegamento tra le celle di carico:
-Le 4 celle di carico vanno collegati tra loro al fine di creare un ponte di Wheatstone. Sono celle di carico a tre fili. 
+Le 4 celle di carico vanno collegate tra loro al fine di creare un ponte di Wheatstone. Sono celle di carico a tre fili. 
 Questo lo schema di collegamento:
 ![](imgs/ponte_wheatstone.jpg)
 
