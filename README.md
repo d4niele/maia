@@ -26,12 +26,18 @@ Eseguendo il codice seguente, colleghiamo la scheda alla nostra rete wifi:
 import network
 n = network.WLAN(network.STA_IF)
 n.active(True)
-
-n.connect("ssid","password")# inserire il nome della propria rete wifi e la relativa password
-
+n.scan()
+n.connect("ssid","password")
+# inserire il nome della propria rete wifi e la relativa password
+n.ifconfig()
 ```
-
-
+#### Installazione della libreria micropython-hx711:
+Dopo aver collegato la scheda ESP32 a Internet attraverso la connessione wifi, c'è bisogno di installare nell'ambiente micropython la libreria per interfacciarsi all'amplificatore hx711.
+L'installazione è semplice e consiste in 2 righe di codice:
+```python
+import upip
+upip.install("micropython-hx711")
+```
 
 ## Links
 [Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)
