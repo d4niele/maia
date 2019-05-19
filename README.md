@@ -13,7 +13,10 @@ La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare
 #### Collegamento tra le celle di carico:
 Le 4 celle di carico vanno collegati tra loro al fine di creare un ponte di Wheatstone. Sono celle di carico a tre fili. 
 Questo lo schema di collegamento:
-[](imgs/ponte_wheatstone.jpg)
+![](imgs/ponte_wheatstone.jpg)
+
+#### Collegamento tra amplificatore celle di carico e scheda elettronica:
+![](imgs/collegamento_esp32_hx711.jpg)
 
 
 ## Links
