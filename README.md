@@ -8,7 +8,8 @@ Prototipo per la costruzione di un sistema di controllo di peso e temperatura pe
 - Sensore di temperatura e umidità (interno)
 
 #### Preparazione della scheda ESP32:
-La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare sulla stessa  il sottosistema Micropython. Viene utilizzato il tool ethtool - [questa la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
+La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare sulla stessa  il sottosistema Micropython. Viene utilizzato il tool ethtool (da installare sul proprio PC) - [questa la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
+Altro tool utile da installare sul proprio pc è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy)  
 
 #### Collegamento tra le celle di carico:
 Le 4 celle di carico vanno collegati tra loro al fine di creare un ponte di Wheatstone. Sono celle di carico a tre fili. 
@@ -17,6 +18,19 @@ Questo lo schema di collegamento:
 
 #### Collegamento tra amplificatore celle di carico e scheda elettronica:
 ![](imgs/collegamento_esp32_hx711.jpg)
+
+#### Primi test sulla scheda ESP32:
+Dopo aver collegato la scheda ESP32 al proprio Pc con un cavo usb-microusb, si accede all'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "minterm /dev/ttyUSB0 115200 --raw" .
+Eseguendo il codice seguente, colleghiamo la scheda alla nostra rete wifi:
+```python
+import network
+n = network.WLAN(network.STA_IF)
+n.active(True)
+
+n.connect("ssid","password")# inserire il nome della propria rete wifi e la relativa password
+
+```
+
 
 
 ## Links
