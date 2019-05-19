@@ -5,7 +5,7 @@ Prototipo per la costruzione di un sistema di controllo di peso e temperatura pe
 - [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
 - [Amplificatore segnale celle di carico HX711](imgs/hx711.jpg)
 - [Sensore di temperatura digitale DS18B20 (per uso esterno)](imgs/ds18b20.jpg)
-- Sensore di temperatura e umidità (interno)
+- [Sensore di temperatura e umidità DHT22 (per uso interno)](imgs/dht22.jpg)
 
 #### Preparazione della scheda ESP32:
 La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare sulla stessa  il sottosistema Micropython. Viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
