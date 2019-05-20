@@ -19,7 +19,7 @@ Questo lo schema di collegamento:
 ![](imgs/ponte_wheatstone.jpg)
 
 #### Collegamento tra amplificatore celle di carico e scheda elettronica:
-Hx711 < -- > ESP32  
+**Hx711** < -- > **ESP32**
 GND   < -- > GND  
 DT    < -- > G02  
 SCK   < -- > G00  
