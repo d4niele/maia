@@ -15,7 +15,13 @@ Altro tool utile da installare sul proprio pc per interragire con la scheda Esp3
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
 
-Questo lo schema di collegamento:  
+Questo lo schema di collegamento:
+**Cella di carico** < -- > **Hx711**  
+Cella di carico in basso a destra  < -- > E+  
+Cella di carico in alto a sinistra   < -- > E-  
+Cella di carico in alto a destra  < -- > A-  
+Cella di carico in basso a sinistra   < -- > A+ 
+
 ![](imgs/loadcell_hx711_bb.jpg)
 
 #### Collegamento tra amplificatore celle di carico e scheda elettronica:
@@ -63,4 +69,5 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
  - metodo più accurato: applicare il [metodo dei minimi quadrati](https://www.studenti.it/matematica/retta-di-regressione-lineare-62.jspc)  
 
 ## Links
+[Getting Started With Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)
 [Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)
