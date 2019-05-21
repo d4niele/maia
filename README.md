@@ -15,7 +15,8 @@ Altro tool utile da installare sul proprio pc per interragire con la scheda Esp3
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
 
-Questo lo schema di collegamento:
+Questo lo schema di collegamento:  
+
 **Cella di carico** < -- > **Hx711**  
 Cella di carico in basso a destra  < -- > E+  
 Cella di carico in alto a sinistra   < -- > E-  
