@@ -70,5 +70,5 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
  - metodo più accurato: applicare il [metodo dei minimi quadrati](https://www.studenti.it/matematica/retta-di-regressione-lineare-62.jspc)  
 
 ## Links
-[Getting Started With Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)
+[Getting Started With Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)  
 [Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)
