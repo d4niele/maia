@@ -72,3 +72,4 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
 ## Links
 [Getting Started With Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)  
 [Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)
+[Definizione di risoluzione sensibilita accuratezza precisione](https://www.altrasoluzione.com/blog/strumenti-di-misura-risoluzione-sensibilita-accuratezza-precisione)
