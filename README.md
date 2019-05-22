@@ -53,6 +53,7 @@ L'installazione è semplice e consiste in 2 righe di codice:
 import upip
 upip.install("micropython-hx711")
 ```
+altra libreria "hx711" da prendere in considerazione è [questa](https://github.com/HowManyOliversAreThere/hx711_mpy-driver/blob/master/hx711.py)    
 
 #### Singola lettura di test di peso (senza calibrazione):
 
