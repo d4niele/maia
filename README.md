@@ -70,8 +70,8 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
  - metodo più accurato: applicare il [metodo dei minimi quadrati](https://www.studenti.it/matematica/retta-di-regressione-lineare-62.jspc)  
 
 ## Links
-[Micropython](http://micropython.org/download#esp32)
-[Micropython](https://docs.micropython.org/en/latest/index.html)
+[Micropython](https://docs.micropython.org/en/latest/index.html)  
+[Micropython Firmware ESP32](http://micropython.org/download#esp32)
 [Getting Started With Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)  
 [Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)
 [Definizione di risoluzione sensibilita accuratezza precisione](https://www.altrasoluzione.com/blog/strumenti-di-misura-risoluzione-sensibilita-accuratezza-precisione)
