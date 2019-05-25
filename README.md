@@ -11,6 +11,19 @@ Progetto per la costruzione di un prototipo di un sistema elettronico digitale d
 La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare il sottosistema Micropython su di essa: viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
 Altro tool utile da installare sul proprio pc per interragire con la scheda Esp32 è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy).
 
+#### Primi test sulla scheda ESP32:
+Dopo aver collegato la scheda ESP32 al proprio Pc con un cavo usb-microusb, si accede all'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "miniterm /dev/ttyUSB0 115200 --raw" oppure "miniterm.py /dev/ttyUSB0 115200 --raw". Il parametro '/dev/ttyUSB0' indica la porta seriale (serial over usb) assegnata dal PC alla scheda. 
+Eseguendo il codice seguente, colleghiamo la scheda alla nostra rete wifi:
+```python
+import network
+n = network.WLAN(network.STA_IF)
+n.active(True)
+n.scan()
+n.connect("ssid","password")
+# inserire il nome della propria rete wifi e la relativa password
+n.ifconfig()
+```
+
 #### Collegamento tra le 4 celle di carico:
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
@@ -34,18 +47,6 @@ VCC   < -- > 3.3
 
 ![](imgs/esp32_xh711_bb.jpg)
 
-#### Primi test sulla scheda ESP32:
-Dopo aver collegato la scheda ESP32 al proprio Pc con un cavo usb-microusb, si accede all'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "miniterm /dev/ttyUSB0 115200 --raw" oppure "miniterm.py /dev/ttyUSB0 115200 --raw". Il parametro '/dev/ttyUSB0' indica la porta seriale (serial over usb) assegnata dal PC alla scheda. 
-Eseguendo il codice seguente, colleghiamo la scheda alla nostra rete wifi:
-```python
-import network
-n = network.WLAN(network.STA_IF)
-n.active(True)
-n.scan()
-n.connect("ssid","password")
-# inserire il nome della propria rete wifi e la relativa password
-n.ifconfig()
-```
 #### Installazione della libreria micropython-hx711:
 Dopo aver collegato la scheda ESP32 a internet attraverso una connessione wifi, c'è bisogno di installareal suo interno la libreria per interfacciarsi all'amplificatore hx711.
 L'installazione è semplice e consiste in 2 righe di codice:
