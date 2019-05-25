@@ -71,12 +71,12 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
  - metodo più accurato: applicare il [metodo dei minimi quadrati](https://www.studenti.it/matematica/retta-di-regressione-lineare-62.jspc)  
 
 #### Collegamento del sensore di temperatura/unidità DHT22:
-Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 Pin (i 2 pin esterni sono di alimentazione, quello centrali è un pin "dati"): 
+Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 Pin (i 2 pin esterni sono di alimentazione, quello centrale è un pin "dati"):  
 ![](imgs/dht22.jpg)  
-Il sensore si può collegare direttamente alla scheda microcontrollore con ESP32:    
+Il sensore si può collegare direttamente alla scheda microcontrollore ESP32:    
 **DHT22** < -- > **ESP32**  
 GND   < -- > GND  
-DT    < -- > G04   
+OUT    < -- > G04   
 VCC   < -- > 3.3  
 ![](imgs/dht22.jpg)  
 Per la misurazione, viene utilizzato un protocollo 1-wire personalizzato. La libreria utilizzata per leggere i valori di temperatura e umidità è già builtin all'intenrno dell'interprete Micropython. Il codice di esempio per una singola lettura è molto semplice:
