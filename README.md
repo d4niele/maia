@@ -24,7 +24,7 @@ n.connect("ssid","password")
 n.ifconfig()
 ```
 
-## SENSORISTICA MISURAZIONE PESO  
+## SENSORI DI PESO  
 #### Collegamento tra le 4 celle di carico:
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
@@ -78,7 +78,7 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
    
 ## SENSORE TEMPERATURA INTERNA     
 #### Collegamento del sensore di temperatura/umidità DHT22:
-Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 Pin (in genere i 2 pin esterni sono di alimentazione, quello centrale è un pin "data out"). Questa tipologia di sensore integra sulla schedina la resistenza di pull-up tra pin "data-out" e VCC:  
+Il sensore di temperatura e umidità utilizzato è il componente DHT22 su schedina elettronica a 3 Pin (in genere i 2 pin esterni sono di alimentazione, quello centrale è un pin "data out"). Questa tipologia di sensore integra sulla schedina la resistenza di pull-up tra pin "data-out" e VCC:  
 ![](imgs/dht22.jpg)  
 Il sensore si può collegare direttamente alla scheda microcontrollore ESP32:  
 
@@ -98,12 +98,16 @@ d.measure() # funzione da richiamare prima di ogni nuova misurazione
 d.temperature()
 d.humidity()
 ```
-
-
+## SENSORE TEMPERATURA ESTERNA     
+#### Collegamento del sensore di temperatura DS18B20:
+Il sensore utilizzato per misurare la temperatura esterna è il componente DB18B20 (water resistant ). Ha 3 Pin (in genere i 2 pin esterni sono di alimentazione, quello centrale è un pin "data out"). Questa tipologia di sensore integra sulla schedina la resistenza di pull-up tra pin "data-out" e VCC:  
+![](imgs/dht22.jpg)  
 ## Links
 [Micropython](https://docs.micropython.org/en/latest/index.html)  
 [Micropython Firmware ESP32](http://micropython.org/download#esp32)  
 [Getting Started With Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)  
-[Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)
-[Definizione di risoluzione sensibilita accuratezza precisione](https://www.altrasoluzione.com/blog/strumenti-di-misura-risoluzione-sensibilita-accuratezza-precisione)
-[DHT22 e protocollo di trasmissione dati](https://www.settorezero.com/wordpress/misurare-temperatura-e-umidita-relativa-con-il-sensore-dht22-e-un-picmicro/)
+[Load Cell Amplifier Tutorial - Sparkfun](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all)  
+[Definizione di risoluzione sensibilita accuratezza precisione](https://www.altrasoluzione.com/blog/strumenti-di-misura-risoluzione-sensibilita-accuratezza-precisione)  
+[DHT22 e protocollo di trasmissione dati](https://www.settorezero.com/wordpress/misurare-temperatura-e-umidita-relativa-con-il-sensore-dht22-e-un-picmicro/) 
+[DS18b20 e ESP32](https://randomnerdtutorials.com/esp32-with-multiple-ds18b20-temperature-sensors/)  
+
