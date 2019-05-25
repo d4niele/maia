@@ -113,7 +113,7 @@ GIALLO(DATA) | G015
 ROSSO(VCC) | 3.3  
 
 ![](imgs/esp32_ds18b20_bb.jpg)  
-esempio di codice per testare il sensore ds18b20:   
+A livello software, per la misurazione viene utilizzato un protocollo 1-wire. La libreria utilizzata per leggere i valori di temperatura e umidità è già presente (built-in) all'interno dell'interprete Micropython flashato sulla scheda. Esempio di codice per testare il sensore ds18b20:   
 ```python
 import time
 import machine
