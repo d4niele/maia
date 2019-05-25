@@ -71,7 +71,9 @@ Al fine di rilevare le misurazioni di peso in kg (o in altri sistemi di misurazi
 Un sistema lineare è rappresentato da un modello matematico semplice (equazione di una retta), per trovare l'equazione di una retta ci sono diversi metodi e ne riporto due:
  - metodo semplice: basta conoscere due suoi punti (e tra questi potrebbe esserci anche quello relativo a x=0) e applicare la [formula relativa](https://www.youmath.it/formulari/formulari-di-geometria-analitica/434-equazione-della-retta-passante-per-due-punti.html)  
  - metodo più accurato: applicare il [metodo dei minimi quadrati](https://www.studenti.it/matematica/retta-di-regressione-lineare-62.jspc) 
- 
+
+   
+   
 ### SENSORE TEMPERATURA INTERNA     
 #### Collegamento del sensore di temperatura/unidità DHT22:
 Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 Pin (i 2 pin esterni sono di alimentazione, quello centrale è un pin "dati"):  
