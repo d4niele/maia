@@ -76,11 +76,11 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
 
    
    
-## SENSORE TEMPERATURA INTERNA     
-#### Collegamento del sensore di temperatura/umidità DHT22:
+## SENSORE TEMPERATURA INTERNA
 Il sensore di temperatura e umidità utilizzato è il componente DHT22 su schedina elettronica a 3 Pin (in genere i 2 pin esterni sono di alimentazione, quello centrale è un pin "data out"). Questa tipologia di sensore integra sulla schedina la resistenza di pull-up tra pin "data-out" e VCC:  
-![](imgs/dht22.jpg)  
-Il sensore si può collegare direttamente alla scheda microcontrollore ESP32:  
+![](imgs/dht22.jpg)       
+#### Collegamento del sensore di temperatura/umidità DHT22:
+Il sensore si può collegare direttamente alla scheda microcontrollore ESP32 con i seguenti collegamenti:  
 
 DHT22 | ESP32  
 ------------ | -------------
@@ -98,10 +98,11 @@ d.measure() # funzione da richiamare prima di ogni nuova misurazione
 d.temperature()
 d.humidity()
 ```
-## SENSORE TEMPERATURA ESTERNA     
-#### Collegamento del sensore di temperatura DS18B20:
+## SENSORE TEMPERATURA ESTERNA
 Il sensore utilizzato per misurare la temperatura esterna è il componente DB18B20 (water resistant ). Ha 3 Pin (in genere i 2 pin esterni sono di alimentazione, quello centrale è un pin "data out"). Questa tipologia di sensore integra sulla schedina la resistenza di pull-up tra pin "data-out" e VCC:  
-![](imgs/dht22.jpg)  
+![](imgs/ds18b20.jpg)       
+#### Collegamento del sensore di temperatura DS18B20:
+
 ## Links
 [Micropython](https://docs.micropython.org/en/latest/index.html)  
 [Micropython Firmware ESP32](http://micropython.org/download#esp32)  
