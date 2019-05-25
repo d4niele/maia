@@ -79,7 +79,7 @@ MINUS   < -- > GND
 OUT    < -- > G04   
 PLUS   < -- > 3.3  
 ![](imgs/esp32_dht22_bb.jpg)  
-Per la misurazione, viene utilizzato un protocollo 1-wire personalizzato. La libreria utilizzata per leggere i valori di temperatura e umidità è già builtin all'intenrno dell'interprete Micropython. Il codice di esempio per una singola lettura è molto semplice:
+Per la misurazione, viene utilizzato un protocollo 1-wire personalizzato. La libreria utilizzata per leggere i valori di temperatura e umidità è già built-in all'interno dell'interprete Micropython. Il codice di esempio per una singola lettura è molto semplice:
 
 ```python
 import dht, machine
