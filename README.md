@@ -109,7 +109,7 @@ Il sensore utilizza un protocollo di comunicazione 1-wire (onewire) che permette
 DSB1820 | ESP32  
 ------------ | -------------  
 NERO(GND) | GND  
-GIALLO(DATA) | G04   
+GIALLO(DATA) | G015   
 ROSSO(VCC) | 3.3  
 
 ```python
@@ -118,7 +118,7 @@ import machine
 import onewire
 
 # the device is on GPIO12
-dat = machine.Pin(12)
+dat = machine.Pin(15)
 
 # create the onewire object
 ds = onewire.DS18B20(onewire.OneWire(dat))
