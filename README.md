@@ -4,8 +4,8 @@ Progetto per la costruzione di un prototipo di un sistema elettronico digitale d
 - [Microcontrollore ESP32](imgs/esp32.jpg) - [pinout](imgs/esp32_pinout.jpg)
 - [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
 - [Amplificatore segnale celle di carico HX711](imgs/hx711.jpg)
-- [Sensore di temperatura digitale DS18B20 (per uso esterno)](imgs/ds18b20.jpg)
-- [Sensore di temperatura e umidità DHT22 (per uso interno)](imgs/dht22.jpg)
+- [Sensore di temperatura digitale DS18B20 (uso outdoor)](imgs/ds18b20.jpg)
+- [Sensore di temperatura e umidità DHT22 (uso indoor)](imgs/dht22.jpg)
 
 #### Preparazione della scheda ESP32:
 La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare il sottosistema Micropython su di essa: viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
