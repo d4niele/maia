@@ -99,9 +99,42 @@ d.temperature()
 d.humidity()
 ```
 ## SENSORE TEMPERATURA ESTERNA
-Il sensore utilizzato per misurare la temperatura esterna è il componente DB18B20 (water resistant ). Ha 3 Pin (in genere i 2 pin esterni sono di alimentazione, quello centrale è un pin "data out"). Questa tipologia di sensore integra sulla schedina la resistenza di pull-up tra pin "data-out" e VCC:  
-![](imgs/ds18b20.jpg)       
+Il sensore utilizzato per misurare la temperatura esterna è il componente DB18B20 (water resistant ).
+Il sensore ha 3 fili (rosso Vcc,nero Ground, giallo Data Out). 
+![](imgs/ds18b20.jpg)
+
 #### Collegamento del sensore di temperatura DS18B20:
+Il sensore utilizza un protocollo di comunicazione 1-wire (onewire) che permette di mettere in serie molteplici sensori dello stesso tipo utilizando un singolo cavo. Nei collegamenti va tenuto conto che bisogna aggiungere una rssitenza di pull-up tra il pin data (giallo) e il pin VCC(rosso).   
+DSB1820 | ESP32  
+------------ | -------------
+NERO(GND) | GND  
+GIALLO(DATA) | G04   
+ROSSO(VCC) | 3.3
+
+```python
+import time
+import machine
+import onewire
+
+# the device is on GPIO12
+dat = machine.Pin(12)
+
+# create the onewire object
+ds = onewire.DS18B20(onewire.OneWire(dat))
+
+# scan for devices on the bus
+roms = ds.scan()
+print('found devices:', roms)
+
+# loop 10 times and print all temperatures
+for i in range(10):
+    print('temperatures:', end=' ')
+    ds.convert_temp()
+    time.sleep_ms(750)
+    for rom in roms:
+        print(ds.read_temp(rom), end=' ')
+    print()
+```
 
 ## Links
 [Micropython](https://docs.micropython.org/en/latest/index.html)  
