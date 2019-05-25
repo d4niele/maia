@@ -30,6 +30,7 @@ Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Whe
 ![](imgs/celle_di_carico.jpg) 
 
 Questo lo schema di collegamento:  
+
 Cella di carico | Hx711
 ------------ | -------------
 Cella di carico in basso a destra | E+  
