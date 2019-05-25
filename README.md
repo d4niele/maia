@@ -61,7 +61,7 @@ altra libreria "hx711" da prendere in considerazione è [questa](https://github.
 
 ```python
 from machine import freq
-freq(160000000) # purtroppo l'oscillatore dell'amplificatore è più lento :(
+freq(160000000) # 160Mhz purtroppo l'oscillatore dell'amplificatore è più lento :(
 from hx711 import HX711
 driver = HX711(d_out=2, pd_sck=0)
 driver.channel=HX711.CHANNEL_A_64
