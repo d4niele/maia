@@ -24,7 +24,7 @@ n.connect("ssid","password")
 n.ifconfig()
 ```
 
-## SENSORE PESO  
+## SENSORISTICA MISURAZIONE PESO  
 #### Collegamento tra le 4 celle di carico:
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
