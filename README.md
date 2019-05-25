@@ -75,7 +75,7 @@ Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 
 ![](imgs/dht22.jpg)  
 Il sensore si può collegare direttamente alla scheda microcontrollore ESP32:    
 **DHT22** < -- > **ESP32**  
--   < -- > GND  
+--   < -- > GND  
 OUT    < -- > G04   
 +   < -- > 3.3  
 ![](imgs/esp32_dht22_bb.jpg)  
