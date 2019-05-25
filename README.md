@@ -118,19 +118,16 @@ import time
 import machine
 import onewire
 
-# the device is on GPIO12
+#colleghiamo il filo giallo del sensore al pin GPIO15 di esp32
 dat = machine.Pin(15)
-
-# create the onewire object
 ds = onewire.DS18B20(onewire.OneWire(dat))
 
-# scan for devices on the bus
 roms = ds.scan()
-print('found devices:', roms)
+print('sensori:', roms)
 
-# loop 10 times and print all temperatures
+# loop 10 letture
 for i in range(10):
-    print('temperatures:', end=' ')
+    print('temperatura:', end=' ')
     ds.convert_temp()
     time.sleep_ms(750)
     for rom in roms:
