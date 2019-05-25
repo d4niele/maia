@@ -24,7 +24,7 @@ n.connect("ssid","password")
 n.ifconfig()
 ```
 
-### SENSORE PESO  
+## SENSORE PESO  
 #### Collegamento tra le 4 celle di carico:
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
@@ -74,7 +74,7 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
 
    
    
-### SENSORE TEMPERATURA INTERNA     
+## SENSORE TEMPERATURA INTERNA     
 #### Collegamento del sensore di temperatura/umidità DHT22:
 Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 Pin (i 2 pin esterni sono di alimentazione, quello centrale è un pin "dati"):  
 ![](imgs/dht22.jpg)  
