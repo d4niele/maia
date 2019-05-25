@@ -37,6 +37,13 @@ Cella di carico in alto a sinistra   < -- > E-
 Cella di carico in alto a destra  < -- > A-  
 Cella di carico in basso a sinistra   < -- > A+ 
 
+Cella di carico** | Hx711
+------------ | -------------
+Cella di carico in basso a destra | E+  
+Cella di carico in alto a sinistra | E-  
+Cella di carico in alto a destra  | A-  
+Cella di carico in basso a sinistra | A+ 
+
 ![](imgs/loadcell_hx711_bb.jpg)
 
 #### Collegamento tra amplificatore celle di carico e scheda elettronica:
