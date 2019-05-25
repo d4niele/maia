@@ -126,7 +126,7 @@ ds = onewire.DS18B20(onewire.OneWire(dat))
 roms = ds.scan()
 print('sensori:', roms)
 
-# loop 10 letture
+# 10 letture
 for i in range(10):
     print('temperatura:', end=' ')
     ds.convert_temp()
