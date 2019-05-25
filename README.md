@@ -84,7 +84,7 @@ Per la misurazione, viene utilizzato un protocollo 1-wire personalizzato. La lib
 ```python
 import dht, machine
 d = dht.DHT22(machine.Pin(4))
-d.measure() # funzione da richiamare per ogni nuova misurazione
+d.measure() # funzione da richiamare prima di ogni nuova misurazione
 d.temperature()
 d.humidity()
 ```
