@@ -24,6 +24,7 @@ n.connect("ssid","password")
 n.ifconfig()
 ```
 
+###SENSORE PESO  
 #### Collegamento tra le 4 celle di carico:
 Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
@@ -69,8 +70,9 @@ driver.read()
 Al fine di rilevare le misurazioni di peso in kg (o in altri sistemi di misurazione) basterà calibrare il sistema supponendo che la sensoristica relativa alla misurazione si comporti come un sistema lineare (y = ax+b).
 Un sistema lineare è rappresentato da un modello matematico semplice (equazione di una retta), per trovare l'equazione di una retta ci sono diversi metodi e ne riporto due:
  - metodo semplice: basta conoscere due suoi punti (e tra questi potrebbe esserci anche quello relativo a x=0) e applicare la [formula relativa](https://www.youmath.it/formulari/formulari-di-geometria-analitica/434-equazione-della-retta-passante-per-due-punti.html)  
- - metodo più accurato: applicare il [metodo dei minimi quadrati](https://www.studenti.it/matematica/retta-di-regressione-lineare-62.jspc)  
-
+ - metodo più accurato: applicare il [metodo dei minimi quadrati](https://www.studenti.it/matematica/retta-di-regressione-lineare-62.jspc) 
+ 
+###SENSORE TEMPERATURA INTERNA     
 #### Collegamento del sensore di temperatura/unidità DHT22:
 Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 Pin (i 2 pin esterni sono di alimentazione, quello centrale è un pin "dati"):  
 ![](imgs/dht22.jpg)  
