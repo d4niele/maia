@@ -75,9 +75,9 @@ Il sensore di temperatura e umidità utilizzato è il componente DHT22 che ha 3 
 ![](imgs/dht22.jpg)  
 Il sensore si può collegare direttamente alla scheda microcontrollore ESP32:    
 **DHT22** < -- > **ESP32**  
---   < -- > GND  
+MINUS   < -- > GND  
 OUT    < -- > G04   
-+   < -- > 3.3  
+PLUS   < -- > 3.3  
 ![](imgs/esp32_dht22_bb.jpg)  
 Per la misurazione, viene utilizzato un protocollo 1-wire personalizzato. La libreria utilizzata per leggere i valori di temperatura e umidità è già builtin all'intenrno dell'interprete Micropython. Il codice di esempio per una singola lettura è molto semplice:
 
