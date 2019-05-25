@@ -112,6 +112,7 @@ NERO(GND) | GND
 GIALLO(DATA) | G015   
 ROSSO(VCC) | 3.3  
 
+esempio di codice per testare il sensore ds18b20:   
 ```python
 import time
 import machine
