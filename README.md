@@ -104,7 +104,7 @@ Il sensore ha 3 fili (rosso Vcc,nero Ground, giallo Data Out).
 ![](imgs/ds18b20.jpg)
 
 #### Collegamento del sensore di temperatura DS18B20:
-Il sensore utilizza un protocollo di comunicazione 1-wire (onewire) che permette di mettere in serie molteplici sensori dello stesso tipo utilizando un singolo cavo. Nei collegamenti va tenuto conto che bisogna aggiungere una resistenza di pull-up tra il pin data (giallo) e il pin VCC(rosso).
+Il sensore utilizza un protocollo di comunicazione 1-wire (onewire) che permette di mettere in serie molteplici sensori dello stesso tipo utilizando un singolo cavo. Nei collegamenti va tenuto conto che bisogna aggiungere una resistenza di 4.7K pull-up tra il pin data (giallo) e il pin VCC(rosso).
 
 DSB1820 | ESP32  
 ------------ | -------------  
