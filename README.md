@@ -3,7 +3,8 @@ Progetto per la costruzione di un prototipo di un sistema elettronico digitale d
 
 #### Architettura tecnologica del sistema:
 L'architettura tecnologica prevede lo sviluppo di un sistema complessivo con paradigma client-server e logica "distribuita" tra periferia e server centrale.
-I nodi periferici saranno dei microcontrollori ESP32 che dialogheranno con un server centrale attraverso un brocker scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo MQTT (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).
+I nodi periferici saranno dei microcontrollori ESP32 che dialogheranno con un server centrale attraverso un brocker scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo MQTT (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).  
+Le informazioni sintetiche che riporteranno le misurazioni dei sensori dei nodi periferici potranno essere lette da semplici client di tipo browser web. 
 
 ## Nodi periferici
 #### Ingredienti:
