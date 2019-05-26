@@ -40,7 +40,7 @@ n.ifconfig()
 Le 4 celle di carico devono essere collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
 
-Questo lo schema di collegamento:  
+Disponendo le 4 celle di carico in prossimità dei 4 vertici di un rettangolo, collegheremo le celle di carico in alto con i fili bianchi e faremo lo stesso tra quelle in basso.Le due celle a sinistra e a destra saranno collegate dal filo nero. I fili rossi saranno collegati all'amplificatore xh711. Questo lo schema di collegamento:  
 
 Filo Rosso della cella di carico | Hx711
 ------------ | -------------
