@@ -8,8 +8,8 @@ Progetto per la costruzione di un prototipo di un sistema elettronico digitale d
 - [Sensore di temperatura e umidità DHT22 (uso indoor)](imgs/dht22.jpg)
 
 #### Architettura tecnologica del sistema:
-L'architettura tecnologica prevede lo sviluppo di un sistema complessivo con paradigma client-server con logica "distribuita" tra periferia e server centrale.
-I nodi periferici saranno dei microcontrollori ESP32 che dialogheranno con un server centrale attraverso un brocker centrale  scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo MQTT (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).
+L'architettura tecnologica prevede lo sviluppo di un sistema complessivo con paradigma client-server e logica "distribuita" tra periferia e server centrale.
+I nodi periferici saranno dei microcontrollori ESP32 che dialogheranno con un server centrale attraverso un brocker scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo MQTT (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).
 
 #### Preparazione della scheda ESP32:
 La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare il sottosistema Micropython su di essa: viene utilizzato il tool ethtool (da installare sul proprio PC) e questa è [la guida ufficiale](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro).
