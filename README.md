@@ -12,7 +12,7 @@ La preparazione dell'ambiente operativo della scheda ESP32 consiste nel caricare
 Altro tool utile da installare sul proprio pc per interragire con la scheda Esp32 è [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy).
 
 #### Primi test sulla scheda ESP32:
-Dopo aver collegato la scheda ESP32 al proprio Pc con un cavo usb-microusb, si accede all'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "miniterm /dev/ttyUSB0 115200 --raw" oppure "miniterm.py /dev/ttyUSB0 115200 --raw". Il parametro '/dev/ttyUSB0' indica la porta seriale (serial over usb) assegnata dal PC alla scheda. 
+Colleghiamo la scheda ESP32 al nostro Pc con un cavo usb-microusb e attiviamo l'interprete interattivo "Micropython" eseguendo un comando da terminale tipo "miniterm /dev/ttyUSB0 115200 --raw" oppure "miniterm.py /dev/ttyUSB0 115200 --raw". Il parametro '/dev/ttyUSB0' indica la porta seriale (serial over usb) assegnata dal PC alla scheda. 
 Eseguendo il codice seguente, colleghiamo la scheda alla nostra rete wifi:
 ```python
 import network
