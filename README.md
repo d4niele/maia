@@ -104,7 +104,7 @@ Il sensore ha 3 fili (rosso Vcc,nero Ground, giallo Data Out).
 ![](imgs/ds18b20.jpg)
 
 #### Collegamento del sensore di temperatura DS18B20:
-Il sensore utilizza un protocollo di comunicazione 1-wire (onewire) che permette di mettere in serie molteplici sensori dello stesso tipo utilizando un singolo cavo. Nei collegamenti va tenuto conto che bisogna aggiungere una resistenza di 4.7K pull-up tra il pin data (giallo) e il pin VCC(rosso).
+Il sensore utilizza il protocollo di comunicazione 1-wire (onewire) che permette di mettere in serie molteplici sensori dello stesso tipo utilizando un singolo cavo. Nei collegamenti va tenuto conto che bisogna aggiungere una resistenza di 4.7K pull-up tra il pin data (giallo) e il pin VCC(rosso).
 
 DSB1820 | ESP32  
 ------------ | -------------  
@@ -113,7 +113,7 @@ GIALLO(DATA) | G015
 ROSSO(VCC) | 3.3  
 
 ![](imgs/esp32_ds18b20_bb.jpg)  
-A livello software, per la misurazione viene utilizzato un protocollo 1-wire. La libreria utilizzata per leggere i valori di temperatura e umidità è già presente (built-in) all'interno dell'interprete Micropython flashato sulla scheda. Esempio di codice per testare il sensore ds18b20:   
+A livello software, per la misurazione viene utilizzato il protocollo 1-wire. La libreria utilizzata per leggere i valori di temperatura è già presente (built-in) all'interno dell'interprete Micropython flashato sulla scheda. Esempio di codice per testare il sensore ds18b20:   
 ```python
 import time
 import machine
