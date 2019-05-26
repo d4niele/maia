@@ -6,7 +6,7 @@ L'architettura tecnologica prevede lo sviluppo di un sistema complessivo con par
 I nodi periferici saranno dei microcontrollori ESP32 che dialogheranno con un server centrale attraverso un brocker scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo MQTT (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).  
 Le informazioni sintetiche che riporteranno le misurazioni dei sensori provenienti dai nodi periferici potranno essere lette da semplici client di tipo browser web. 
 
-## NODI PREIFERICI
+## NODI PERIFERICI
 #### Ingredienti:
 - [Microcontrollore ESP32](imgs/esp32.jpg) - [pinout](imgs/esp32_pinout.jpg)
 - [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
