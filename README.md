@@ -6,7 +6,7 @@ L'architettura tecnologica prevede lo sviluppo di un sistema complessivo con par
 I nodi periferici saranno dei microcontrollori ESP32 che dialogheranno con un server centrale attraverso un brocker scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo MQTT (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).  
 Le informazioni sintetiche che riporteranno le misurazioni dei sensori provenienti dai nodi periferici potranno essere lette da semplici client di tipo browser web. 
 
-## Nodi periferici
+## NODI PREIFERICI
 #### Ingredienti:
 - [Microcontrollore ESP32](imgs/esp32.jpg) - [pinout](imgs/esp32_pinout.jpg)
 - [Cella di carico a tre fili - capacità 50kg](imgs/celle_di_carico.jpg) (4 pezzi)
@@ -31,7 +31,7 @@ n.connect("ssid","password")
 n.ifconfig()
 ```
 
-## SENSORI DI PESO  
+### SENSORI DI PESO  
 #### Collegamento delle 4 celle di carico:
 Le 4 celle di carico devono essere collegate tra loro al fine di creare un [ponte di Wheatstone](https://it.wikipedia.org/wiki/Ponte_di_Wheatstone). Sono celle di carico a tre fili:
 ![](imgs/celle_di_carico.jpg) 
@@ -83,7 +83,7 @@ Un sistema lineare è rappresentato da un modello matematico semplice (equazione
 
    
    
-## SENSORE TEMPERATURA INTERNA
+### SENSORE TEMPERATURA INTERNA
 Il sensore di temperatura e umidità utilizzato è il componente DHT22 su schedina elettronica a 3 Pin (in genere i 2 pin esterni sono di alimentazione, quello centrale è un pin "data out"). Questa tipologia di sensore integra sulla schedina la resistenza di pull-up tra pin "data-out" e VCC:  
 ![](imgs/dht22.jpg)       
 #### Collegamento del sensore di temperatura/umidità DHT22:
@@ -105,7 +105,7 @@ d.measure() # funzione da richiamare prima di ogni nuova misurazione
 d.temperature()
 d.humidity()
 ```
-## SENSORE TEMPERATURA ESTERNA
+### SENSORE TEMPERATURA ESTERNA
 Il sensore utilizzato per misurare la temperatura esterna è il componente DB18B20 (water resistant ).
 Il sensore ha 3 fili (rosso Vcc,nero Ground, giallo Data Out). 
 ![](imgs/ds18b20.jpg)
