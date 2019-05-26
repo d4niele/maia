@@ -1,0 +1,58 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+
+<script>
+$( document ).ready(function() {
+  client = new Paho.MQTT.Client('calupietru.duckdns.org', 9001, "",);
+  var options = {
+    useSSL: false,
+    userName: "test1",
+    password: "test1",
+    onSuccess:onConnect,
+    onFailure:doFail,
+
+  }
+  client.onConnectionLost = onConnectionLost;
+  client.onMessageArrived = onMessageArrived;
+  client.connect(options);
+});
+
+function doFail(e){
+    console.log(e);
+  }
+
+function writeToScreen(message)
+{
+  var pre = document.createElement("p");
+  pre.style.wordWrap = "break-word";
+  pre.innerHTML = message.payloadString;
+  output.appendChild(pre);
+}
+
+function onConnect() {
+  client.subscribe("/maia/1");
+  $('#output').append( "<p>CONNECTED</p>" );
+}
+
+function onConnectionLost(responseObject) {
+  if (responseObject.errorCode !== 0) {
+    console.log("onConnectionLost:"+responseObject.errorMessage);
+  }
+  $('#output').append( "<p>DISCONNECTED</p>" );
+}
+
+function onMessageArrived(message) {
+  var t = message.payloadString;
+  console.log("onMessageArrived:"+t);
+  $('#message').text(t);
+}
+</script>
+<body>
+  <H1>test</H1>
+    <div id="output"></div>
+    <span id="message"></span>
+</body>
+</html>
