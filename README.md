@@ -51,7 +51,7 @@ VCC | 3.3
 ![](imgs/esp32_xh711_bb.jpg)
 
 #### Installazione della libreria micropython-hx711:
-Dopo aver collegato la scheda ESP32 a internet attraverso una connessione wifi, c'è bisogno di installareal suo interno la libreria per interfacciarsi all'amplificatore hx711.
+Dopo aver collegato la scheda ESP32 a internet attraverso una connessione wifi, c'è bisogno di installare al suo interno la libreria per interfacciarsi all'amplificatore hx711.
 L'installazione è semplice e consiste in 2 righe di codice:
 ```python
 import upip
