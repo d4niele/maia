@@ -40,7 +40,7 @@ Cella di carico in basso a sinistra | A+
 
 ![](imgs/loadcell_hx711_bb.jpg)
 
-#### Collegamento tra amplificatore celle di carico e scheda elettronica:
+#### Collegamento tra amplificatore hx711 e scheda elettronica:
 Hx711 | ESP32
 ------------ | -------------
 GND | GND  
