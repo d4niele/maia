@@ -3,13 +3,13 @@ Progetto per la costruzione di un prototipo di un sistema elettronico digitale d
 
 #### Architettura tecnologica del sistema:
 L'architettura tecnologica prevede lo sviluppo di un sistema complessivo con paradigma client-server e logica "distribuita" tra periferia e server centrale.
-I nodi periferici saranno dei microcontrollori ESP32 che dialogheranno con un server centrale attraverso un brocker scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo MQTT (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).  
+I nodi periferici saranno dei microcontrollori [ESP32](https://en.wikipedia.org/wiki/ESP32) che dialogheranno con un server centrale (in cloud) attraverso un brocker scambiando messaggi secondo un pattern architetturale di tipo publish/subscribe (nello specifico i nodi periferici esp32 pubblicheranno messaggi che saranno gestiti dal brocker centrale). Per lo scambio dei dati si userà il protocollo [MQTT](https://it.wikipedia.org/wiki/MQTT) (MQ Telemetry Transport). [Ecco gli appunti sui diversi scenari](imgs/network.jpg).  
 Le informazioni sintetiche che riporteranno le misurazioni dei sensori provenienti dai nodi periferici potranno essere lette da semplici client di tipo browser web.  
 Verranno utilizzate solo tecnologie open-source e cibo vegano durante lo sviluppo  :-) .
 
 ## NODI PERIFERICI
 Un nodo periferico è costituito essenzialemente da una scheda elettronica con microcontrollore (ESP32) e una serie di sensori ad essa collegata. Per i nodi periferici diamo molta rilevanza al consumo minimo di energia elettrica dei componenti  costitutivi. 
-La programmazione sowtware di questi microcontrollori verrà eseguita in Micropython.
+La programmazione sowtware di questi microcontrollori verrà eseguita in [Micropython](https://micropython.org/).
 
 #### Ingredienti:
 - [Microcontrollore ESP32](imgs/esp32.jpg) - [pinout](imgs/esp32_pinout.jpg)
