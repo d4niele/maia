@@ -31,7 +31,7 @@ Le 4 celle di carico vanno collegate tra loro al fine di creare un [ponte di Whe
 
 Questo lo schema di collegamento:  
 
-Cella di carico | Hx711
+Filo Rosso della cella di carico | Hx711
 ------------ | -------------
 Cella di carico in basso a destra | E+  
 Cella di carico in alto a sinistra | E-  
