@@ -148,6 +148,7 @@ for i in range(10):
 ```
 
 ## Links
+---  
 [Micropython](https://docs.micropython.org/en/latest/index.html)  
 [Micropython Firmware ESP32](http://micropython.org/download#esp32)  
 [Getting Started With Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)  
