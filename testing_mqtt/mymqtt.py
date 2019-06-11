@@ -6,6 +6,8 @@ client = MQTTClient("test1","calupietru.duckdns.org",port=1883,user="test1",pass
 client.connect()
 for x in range(10):
     time.sleep(5)
-    message = {"espid":"Prato","timestamp":None,"temperatura":get_data()[1],"umidità":get_data()[0],"peso":str(kg())}
+    m = get_data()
+    k = kg()
+    message = {"espid":"Prato","timestamp":None,"temperatura":m[1],"umidità":m[0],"peso":str(k)}
     message["timestamp"]=time.time()
     client.publish("/maia/1",json.dumps(message))
