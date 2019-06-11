@@ -1,4 +1,4 @@
-# Su Micropython
+### su Micropython
 Installo la libreria umqtt.simple
 ```python
 import upip
@@ -14,8 +14,9 @@ client.connect()
 client.publish("/maia/1","esp32")                  
 ```
 
-# Da Pc
+# su Pc
 Utilizzando invece la libreria paho.mqtt
+```python
 import paho.mqtt.client as mqtt
 import json,time
 client = mqtt.Client()
@@ -27,3 +28,4 @@ for x in range(10):
     time.sleep(1)
     message["timestamp"]=time.time()
     client.publish("/maia/1",json.dumps(message))
+```
