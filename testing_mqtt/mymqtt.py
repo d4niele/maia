@@ -4,8 +4,7 @@ from umqtt.simple import MQTTClient
 import json,time
 client = MQTTClient("test1","calupietru.duckdns.org",port=1883,user="test1",password="test1")
 client.connect()
-for x in range(10):
-    time.sleep(5)
+def send_message():
     m = get_data()
     k = kg()
     message = {"espid":"Prato","timestamp":None,"temperatura":m[1],"umidità":m[0],"peso":str(k)}
