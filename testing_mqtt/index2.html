@@ -47,12 +47,14 @@ function onConnectionLost(responseObject) {
 function onMessageArrived(message) {
   var t = message.payloadString;
   console.log("onMessageArrived:"+t);
-  $('#message').text(t);
+  $('#messagebox').prepend("<span id='message'>"+t+"</span><br/>");
 }
 </script>
 <body>
   <H1>test</H1>
     <div id="output"></div>
-    <span id="message"></span>
+    <div id="messagebox">
+    </div>
+
 </body>
 </html>
