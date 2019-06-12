@@ -12,7 +12,7 @@ if n.isconnected():
             send_message()
         except:
 	    print(Error in send_message)
-	    time.sleep(TIME_INTERVAL)
+	    time.sleep(TIME_INTERVAL*10)
 	    import machine
 	    machine.reset()
 	time.sleep(TIME_INTERVAL)
