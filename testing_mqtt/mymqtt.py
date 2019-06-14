@@ -8,7 +8,7 @@ def send_message():
     m = get_data()
     k = kg()
     mem = gc.mem_free()
-    message = {"espid":"Ascea","timestamp":None,"memoria_libera":str(mem),"temperatura":str(m[1]),"umidità":str(m[0]),"peso":str(k)}
+    message = {"espid":"Ascea","timestamp":None,"memoria_libera":str(mem),"temperatura":str(round(m[1],2)),"umidita":str(round(m[0],2)),"peso":str(round(k,2)),}
     message["timestamp"]=str(time.time())
     client.publish("/maia/1",json.dumps(message))
     client.disconnect()
