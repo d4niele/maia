@@ -156,4 +156,4 @@ for i in range(10):
 [Definizione di risoluzione sensibilita accuratezza precisione](https://www.altrasoluzione.com/blog/strumenti-di-misura-risoluzione-sensibilita-accuratezza-precisione)  
 [DHT22 e protocollo di trasmissione dati](https://www.settorezero.com/wordpress/misurare-temperatura-e-umidita-relativa-con-il-sensore-dht22-e-un-picmicro/)  
 [DS18b20 e ESP32](https://randomnerdtutorials.com/esp32-with-multiple-ds18b20-temperature-sensors/)  
-
+https://randomnerdtutorials.com/esp8266-voltage-regulator-lipo-and-li-ion-batteries/
