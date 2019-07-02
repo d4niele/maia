@@ -1,0 +1,7 @@
+from machine import Pin, I2C
+import ssd1306
+
+i2c = I2C(-1, scl=Pin(22), sda=Pin(21))
+oled = ssd1306.SSD1306_I2C(128, 32, i2c)
+oled.text("ciao",10,10)
+oled.show()
